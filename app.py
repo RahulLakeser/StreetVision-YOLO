@@ -31,7 +31,7 @@ st.write(
 def load_model():
     
     # Compare both models on your own images.
-    return YOLO("yolov8n.pt")
+    return YOLO("yolov8m.pt")
 
 
 try:
