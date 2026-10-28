@@ -30,8 +30,8 @@ st.write(
 @st.cache_resource
 def load_model():
     
-    # Compare both models on your own images.
-    return YOLO("yolov8m.pt")
+    # Using Model yolo26m.pt .
+    return YOLO("yolo26m.pt")
 
 
 try:
