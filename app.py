@@ -127,12 +127,13 @@ if uploaded_file is not None:
         with st.spinner("Detecting objects..."):
 
             start_time = time.perf_counter()
-
+            
             results = model.predict(
                 source=image,
                 device="cpu",
                 conf=confidence,
-                classes=selected_class_ids,
+                imgsz=960,
+                iou=0.65,
                 verbose=False
             )
 
